@@ -21,7 +21,7 @@
 
 				<a href='#' class="logo">VS</a>
 
-				<div id="top-carousel" class="carousel slide" data-ride="carousel">
+				<div id="top-carousel" class="carousel slide closed-carousel" data-ride="carousel">
 
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner" role="listbox">
@@ -62,10 +62,10 @@
 					<h4>Technology investment banking at Credit Suisse.</h4>
 					<h4>Passionate about finance and technology.</h4>
 					<h4>UC Berkeley Economics '17.</h4>
-					<a href="https://www.linkedin.com/in/victoria-sun-7bb926a1"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a><a href="https://www.facebook.com/viwsun"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="mailto:vi.w.sun@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>  
+					<a href="https://www.linkedin.com/in/victoria-sun-7bb926a1"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a><a href="https://www.facebook.com/viwsun"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="mailto:vi.w.sun@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a> 
 				</div>
 
-				<div id="middle-carousel" class="carousel slide" data-ride="carousel">
+				<div id="middle-carousel" class="carousel slide closed-carousel" data-ride="carousel">
 
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner" role="listbox">
@@ -83,7 +83,7 @@
 
 			<div class="bottom">
 
-				<div id="bottom-carousel" class="carousel slide" data-ride="carousel">
+				<div id="bottom-carousel" class="carousel slide closed-carousel" data-ride="carousel">
 
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner" role="listbox">
@@ -113,6 +113,11 @@
 
 <script>
 	$(document).ready(function() {
+
+		$(".carousel").delay(800).removeClass("closed-carousel");
+		$(".middle-content h1").hide(0).delay(1000).fadeIn(800);
+		$(".middle-content h4").hide(0).delay(1400).fadeIn(800);
+		$(".middle-content a").hide(0).delay(1800).fadeIn(800);
 
 		// Set carousel interval times
 	  $('.carousel').carousel({
@@ -171,6 +176,6 @@
 
 	$(window).load(function() {
 		// Animate loader off screen
-		$(".loading-screen").fadeOut("slow");
+		$(".loading-screen").fadeOut(800);
 	});
 </script>

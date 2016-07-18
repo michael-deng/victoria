@@ -73,6 +73,10 @@ body .container {
 	transition: all 800ms 300ms ease;
 }
 
+.closed-carousel {
+	width: 0% !important;
+}
+
 .carousel .carousel-inner {
 	height: 100%;
 	width: 100%;
