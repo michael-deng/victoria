@@ -25,24 +25,18 @@
 		<div class="container">
 
 			<div class="top">
+
+				<div class="logo">VS</div>
+
 				<div id="top-carousel" class="carousel slide" data-ride="carousel">
 
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner" role="listbox">
 				    <div class="item active top1">
-				      <div class="carousel-caption">
-				        Slide 1
-				      </div>
 				    </div>
 				    <div class="item top2">
-				      <div class="carousel-caption">
-				        Slide 2
-				      </div>
 				    </div>
 				    <div class="item top3">
-				      <div class="carousel-caption">
-				        Slide 2
-				      </div>
 				    </div>
 				  </div>
 				</div>
@@ -82,19 +76,10 @@
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner" role="listbox">
 				    <div class="item active middle1">
-				      <div class="carousel-caption">
-				        Slide 1
-				      </div>
 				    </div>
 				    <div class="item middle2">
-				      <div class="carousel-caption">
-				        Slide 2
-				      </div>
 				    </div>
 				    <div class="item middle3">
-				      <div class="carousel-caption">
-				        Slide 2
-				      </div>
 				    </div>
 				  </div>
 				</div>
@@ -103,41 +88,41 @@
 			<div class="separator"></div>
 
 			<div class="bottom">
+
 				<div id="bottom-carousel" class="carousel slide" data-ride="carousel">
 
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner" role="listbox">
 				    <div class="item active bottom1">
-				      <div class="carousel-caption">
-				        Slide 1
-				      </div>
 				    </div>
 				    <div class="item bottom2">
-				      <div class="carousel-caption">
-				        Slide 2
-				      </div>
 				    </div>
 				    <div class="item bottom3">
-				      <div class="carousel-caption">
-				        Slide 2
-				      </div>
 				    </div>
 				  </div>
+				</div>
+
+				<div class="footer">
+					Made with love from Berkeley, California
 				</div>
 			</div>
 		</div>
 
 		<div class="mask">
 		</div>
+
+		<div class="loading-screen">
+			<div class="spinner"></div>
+		</div>
 	</body>
 </html>
 
 <script>
-	$( document ).ready(function() {
+	$(document).ready(function() {
 
 		// Set carousel interval times
 	  $('.carousel').carousel({
-		  interval: 6000,
+		  interval: 5000,
 		  pause: 'none'
 		})
 
@@ -147,6 +132,7 @@
 			$('.top-menu').toggleClass('open-menu');
 			$('#top-carousel').toggleClass('close-carousel');
 			$('.mask').toggleClass('open-mask');
+			$('.logo').toggleClass('black-logo')
 		});
 
 		// Reverse middle carousel sliding direction
@@ -173,5 +159,10 @@
 
         carousel.cycle();
     });
+	});
+
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".loading-screen").fadeOut("slow");
 	});
 </script>
