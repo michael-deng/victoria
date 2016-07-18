@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Victoria Sun</title>
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="custom-styles.css">
 		<!-- Fontawesome -->
@@ -114,11 +115,6 @@
 <script>
 	$(document).ready(function() {
 
-		$(".carousel").delay(800).removeClass("closed-carousel");
-		$(".middle-content h1").hide(0).delay(1000).fadeIn(800);
-		$(".middle-content h4").hide(0).delay(1400).fadeIn(800);
-		$(".middle-content a").hide(0).delay(1800).fadeIn(800);
-
 		// Set carousel interval times
 	  $('.carousel').carousel({
 		  interval: 6000,
@@ -135,7 +131,7 @@
 			$('.links').toggleClass('visible-links');
 		});
 
-		// Reverse middle carousel sliding direction
+		// Reverse middle carousel slide direction
 		$('#middle-carousel').each(function(){
         $(this).carousel();
 
@@ -177,5 +173,11 @@
 	$(window).load(function() {
 		// Animate loader off screen
 		$(".loading-screen").fadeOut(800);
+
+		// Animate onload
+		$(".carousel").delay(800).removeClass("closed-carousel");
+		$(".middle-content h1").hide(0).delay(1000).fadeIn(800);
+		$(".middle-content h4").hide(0).delay(1400).fadeIn(800);
+		$(".middle-content a").hide(0).delay(1800).fadeIn(800);
 	});
 </script>
