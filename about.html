@@ -23,103 +23,27 @@
 	</head>
 	<body>
 		<div class="container">
-
 			<div class="top">
 
-				<a href='#' class="logo">VS</a>
+				<a href='index.html' class="logo black-logo">VS</a>
 
-				<div id="top-carousel" class="carousel slide" data-ride="carousel">
-
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner" role="listbox">
-				    <div class="item active top1">
-				    </div>
-				    <div class="item top2">
-				    </div>
-				    <div class="item top3">
-				    </div>
-				  </div>
-				</div>
-
-				<div class="content top-menu">
+				<div class="content top-menu static-menu">
 					<ul class="links">
-						<li><a href="about.html">About</a></li>
+						<li class="underline">About</li>
 						<li><a href="experience.html">Experience</a></li>
 						<li><a href="resume.html">Resume</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
-
-				<div class="content top-content">
-					<h4 class="menu-btn">Menu</h4>
-					<div id="nav-icon1">
-					  <span></span>
-					  <span></span>
-					  <span></span>
-					</div>
-				</div>
 			</div>
-
-			<div class="separator"></div>
-
-			<div class="middle">
-
-				<div class="content middle-content">
-					<h1>Victoria Sun</h1>
-					<h4>Technology investment banking at Credit Suisse.</h4>
-					<h4>Passionate about finance and technology.</h4>
-					<h4>UC Berkeley Economics '17.</h4>
-					<a href="https://www.linkedin.com/in/victoria-sun-7bb926a1"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a><a href="https://www.facebook.com/viwsun"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="mailto:vi.w.sun@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>  
-				</div>
-
-				<div id="middle-carousel" class="carousel slide" data-ride="carousel">
-
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner" role="listbox">
-				    <div class="item active middle1">
-				    </div>
-				    <div class="item middle2">
-				    </div>
-				    <div class="item middle3">
-				    </div>
-				  </div>
-				</div>
-			</div>
-
-			<div class="separator"></div>
-
-			<div class="bottom">
-
-				<div id="bottom-carousel" class="carousel slide" data-ride="carousel">
-
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner" role="listbox">
-				    <div class="item active bottom1">
-				    </div>
-				    <div class="item bottom2">
-				    </div>
-				    <div class="item bottom3">
-				    </div>
-				  </div>
-				</div>
-
-				<div class="footer">
-					Made with love from Berkeley, California
-				</div>
-			</div>
-		</div>
-
-		<div class="mask">
-		</div>
-
-		<div class="loading-screen">
-			<div class="spinner"></div>
 		</div>
 	</body>
 </html>
 
 <script>
 	$(document).ready(function() {
+
+		$("body").hide(0).fadeIn(800);
 
 		// Set carousel interval times
 	  $('.carousel').carousel({
@@ -163,21 +87,14 @@
     });
 
     // Animate page transitions
-    $('.links li a').click(function(event) {
+    $('.links li a, .logo').click(function(event) {
 			event.preventDefault();
 			newLocation = this.href;
-			$('.carousel').css('width', '0');
-			$('.mask').css('width', '0');
-			$('body').delay(800).fadeOut(800, newpage);
+			$('body').fadeOut(800, newpage);
 		});
 
 		function newpage() {
 			window.location = newLocation;
 		}
-	});
-
-	$(window).load(function() {
-		// Animate loader off screen
-		$(".loading-screen").fadeOut("slow");
 	});
 </script>

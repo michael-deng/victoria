@@ -31,8 +31,8 @@ body .container {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-  	font-family: 'Josefin Sans', sans-serif;
-  	z-index: -1;
+	font-family: 'Josefin Sans', sans-serif;
+	z-index: -1;
 }
 
 .loading-screen {
@@ -112,7 +112,13 @@ body .container {
 	transition: all 800ms ease;
 }
 
-.black-logo {
+.logo:hover, .logo:focus {
+	cursor: default;
+	color: white;
+	text-decoration: none;
+}
+
+.black-logo, .black-logo:hover, .black-logo:focus {
 	color: black;
 }
 
@@ -145,6 +151,8 @@ body .container {
 
 .links li {
 	margin: 0px 20px 10px 20px;
+	cursor: default;
+	color: black;
 }
 
 @media (min-width: 768px) {
@@ -153,13 +161,22 @@ body .container {
 	}
 }
 
+.links li a {
+	color: black;
+	cursor: default;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
 .visible-links {
 	opacity: 1;
-	-webkit-transition: all 800ms 500ms ease;
-	-moz-transition: all 800ms 500ms ease;
-	-ms-transition: all 800ms 500ms ease;
-	-o-transition: all 800ms 500ms ease;
-	transition: all 800ms 500ms ease;
+	-webkit-transition: all 500ms 800ms ease;
+	-moz-transition: all 500ms 800ms ease;
+	-ms-transition: all 500ms 800ms ease;
+	-o-transition: all 500ms 800ms ease;
+	transition: all 500ms 800ms ease;
 }
 
 .mask {
@@ -178,7 +195,7 @@ body .container {
 }
 
 .open-menu {
-	width: 80% !important;
+	width: 80%;
 	-webkit-transition: all 800ms ease;
 	-moz-transition: all 800ms ease;
 	-ms-transition: all 800ms ease;
@@ -188,7 +205,7 @@ body .container {
 
 @media (min-width: 768px) {
   	.open-menu {
-		width: 90% !important;
+		width: 90%;
 	}
 }
 
@@ -202,7 +219,7 @@ body .container {
 }
 
 .open-mask {
-	width: 100% !important;
+	width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -216,6 +233,7 @@ body .container {
 
 #middle-carousel {
 	width: 0%;
+	float: right;
 }
 
 .middle-content {
@@ -254,39 +272,39 @@ body .container {
 }
 
 .top1 {
-  	background: url(castleroof.png) no-repeat center center;
+  	background: url(images/castleroof.png) no-repeat center center;
 }
 
 .top2 {
-	background: url(sanfran.png) no-repeat center center fixed;
+	background: url(images/sanfran.png) no-repeat center center fixed;
 }
 
 .top3 {
-	background: url(rockpath.png) no-repeat center center;
+	background: url(images/rockpath.png) no-repeat center center;
 }
 
 .middle1 {
-	background: url(victoriagarden.png) no-repeat center center;
+	background: url(images/victoriagarden.png) no-repeat center center;
 }
 
 .middle2 {
-	background: url(sanfran.png) no-repeat center center fixed;
+	background: url(images/sanfran.png) no-repeat center center fixed;
 }
 
 .middle3 {
-	background: url(rocksit.png) no-repeat center center;
+	background: url(images/rocksit.png) no-repeat center center;
 }
 
 .bottom1 {
-	background: url(pillargarden.png) no-repeat center center;
+	background: url(images/pillargarden.png) no-repeat center center;
 }
 
 .bottom2 {
-	background: url(sanfran.png) no-repeat center center fixed;
+	background: url(images/sanfran.png) no-repeat center center fixed;
 }
 
 .bottom3 {
-	background: url(rockwaterfall.png) no-repeat center center;
+	background: url(images/rockwaterfall.png) no-repeat center center;
 }
 
 .footer {
@@ -295,6 +313,14 @@ body .container {
 	bottom: 10px;
 	color: white;
 	font-size: 16px;
+}
+
+.static-menu {
+	width: 100%;
+}
+
+.static-menu .links {
+	opacity: 1;
 }
 
 
