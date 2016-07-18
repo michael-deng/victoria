@@ -66,11 +66,11 @@ body .container {
 	height: 100%;
 	width: 100%;
 	float: left;
-	-webkit-transition: all 750ms ease;
-	-moz-transition: all 750ms ease;
-	-ms-transition: all 750ms ease;
-	-o-transition: all 750ms ease;
-	transition: all 750ms ease;
+	-webkit-transition: all 800ms 300ms ease;
+	-moz-transition: all 800ms 300ms ease;
+	-ms-transition: all 800ms 300ms ease;
+	-o-transition: all 800ms 300ms ease;
+	transition: all 800ms 300ms ease;
 }
 
 .carousel .carousel-inner {
@@ -89,26 +89,27 @@ body .container {
 
 .content {
 	float: left;
-	-webkit-transition: all 750ms ease;
-	-moz-transition: all 750ms ease;
-	-ms-transition: all 750ms ease;
-	-o-transition: all 750ms ease;
-	transition: all 750ms ease;
+	-webkit-transition: all 800ms 300ms ease;
+	-moz-transition: all 800ms 300ms ease;
+	-ms-transition: all 800ms 300ms ease;
+	-o-transition: all 800ms 300ms ease;
+	transition: all 800ms 300ms ease;
+	max-height: 100%;
 }
 
 .logo {
 	position: absolute;
-	top: 18px;
+	top: 20px;
 	left: 24px;
 	color: white;
 	font-size: 36px;
 	z-index: 1;
 	font-weight: 600;
-	-webkit-transition: all 750ms ease;
-	-moz-transition: all 750ms ease;
-	-ms-transition: all 750ms ease;
-	-o-transition: all 750ms ease;
-	transition: all 750ms ease;
+	-webkit-transition: all 800ms ease;
+	-moz-transition: all 800ms ease;
+	-ms-transition: all 800ms ease;
+	-o-transition: all 800ms ease;
+	transition: all 800ms ease;
 }
 
 .black-logo {
@@ -128,10 +129,37 @@ body .container {
 .top-menu {
 	width: 0%;
 	overflow: hidden;
+	font-size: 1.5em;
 }
 
-.menu-contents {
-	padding: 30px;
+.links {
+	opacity: 0;
+	list-style-type: none;
+	padding: 5em 5em 0 5em;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.links li {
+	margin: 0px 20px 10px 20px;
+}
+
+@media (min-width: 768px) {
+	.links li {
+  	display: inline-block;
+	}
+}
+
+.visible-links {
+	opacity: 1;
+	-webkit-transition: all 800ms 500ms ease;
+	-moz-transition: all 800ms 500ms ease;
+	-ms-transition: all 800ms 500ms ease;
+	-o-transition: all 800ms 500ms ease;
+	transition: all 800ms 500ms ease;
 }
 
 .mask {
@@ -142,15 +170,20 @@ body .container {
 	width: 0%;
 	z-index: 20;
 	background: rgba(0, 0, 0, 0.5);
-	-webkit-transition: all 750ms ease;
-	-moz-transition: all 750ms ease;
-	-ms-transition: all 750ms ease;
-	-o-transition: all 750ms ease;
-	transition: all 750ms ease;
+	-webkit-transition: all 800ms ease;
+	-moz-transition: all 800ms ease;
+	-ms-transition: all 800ms ease;
+	-o-transition: all 800ms ease;
+	transition: all 800ms ease;
 }
 
 .open-menu {
 	width: 80% !important;
+	-webkit-transition: all 800ms ease;
+	-moz-transition: all 800ms ease;
+	-ms-transition: all 800ms ease;
+	-o-transition: all 800ms ease;
+	transition: all 800ms ease;
 }
 
 @media (min-width: 768px) {
@@ -161,6 +194,11 @@ body .container {
 
 .close-carousel {
 	width: 0% !important;
+	-webkit-transition: all 800ms ease;
+	-moz-transition: all 800ms ease;
+	-ms-transition: all 800ms ease;
+	-o-transition: all 800ms ease;
+	transition: all 800ms ease;
 }
 
 .open-mask {
@@ -168,7 +206,7 @@ body .container {
 }
 
 @media (min-width: 768px) {
-  	#top-carousel {
+  #top-carousel {
 		width: 90%;
 	}
 	.top-content {
@@ -186,7 +224,7 @@ body .container {
 }
 
 @media (min-width: 768px) {
-  	#middle-carousel {
+  #middle-carousel {
 		width: 63%;
 	}
 	.middle-content {
