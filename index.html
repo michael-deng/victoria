@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="custom-styles.css">
+		<script src="https://use.fontawesome.com/d7f800363c.js"></script>
+		<!-- Minified jQuery -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="top">
+				<div id="top-carousel" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#top-carousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#top-carousel" data-slide-to="1"></li>
+				    <!-- <li data-target="#top-carousel" data-slide-to="2"></li> -->
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active top1">
+				      <div class="carousel-caption">
+				        Slide 1
+				      </div>
+				    </div>
+				    <div class="item top2">
+				      <div class="carousel-caption">
+				        Slide 2
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="content top-content">
+					<div id="nav-icon1">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="separator"></div>
+
+			<div class="middle">
+
+				<div class="content middle-content">
+					<h1>Victoria Sun</h1>
+					<h4>Technology investment banking at Credit Suisse.</h4>
+					<h4>Passionate about finance and technology.</h4>
+					<a href="https://www.linkedin.com/in/victoria-sun-7bb926a1"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+					<a href="https://www.facebook.com/viwsun"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					<a href="mailto:vi.w.sun@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>  
+				</div>
+
+				<div id="middle-carousel" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#middle-carousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#middle-carousel" data-slide-to="1"></li>
+				    <!-- <li data-target="#middle-carousel" data-slide-to="2"></li> -->
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active middle1">
+				      <div class="carousel-caption">
+				        Slide 1
+				      </div>
+				    </div>
+				    <div class="item middle2">
+				      <div class="carousel-caption">
+				        Slide 2
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+			<div class="separator"></div>
+
+			<div class="bottom">
+				<div id="bottom-carousel" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#bottom-carousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#bottom-carousel" data-slide-to="1"></li>
+				    <!-- <li data-target="#bottom-carousel" data-slide-to="2"></li> -->
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active bottom1">
+				      <div class="carousel-caption">
+				        Slide 1
+				      </div>
+				    </div>
+				    <div class="item bottom2">
+				      <div class="carousel-caption">
+				        Slide 2
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+	$( document ).ready(function() {
+
+		// Set carousel interval times
+	  $('.carousel').carousel({
+		  interval: 5000
+		})
+
+		// Animate menu button
+		$('#nav-icon1').click(function(){
+			$(this).toggleClass('open');
+		});
+	});
+</script>
