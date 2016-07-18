@@ -27,7 +27,7 @@ html, body {
 }
 
 body .container {
-	min-height: 100%;
+	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -86,9 +86,9 @@ body .container {
 	height: 100%;
 	width: 100%;
 	-webkit-background-size: cover; /* For WebKit*/
-	-moz-background-size: cover;    /* Mozilla*/
-	-o-background-size: cover;      /* Opera*/
-	background-size: cover;         /* Generic*/
+  	-moz-background-size: cover;    /* Mozilla*/
+  	-o-background-size: cover;      /* Opera*/
+  	background-size: cover;         /* Generic*/
 }
 
 .content {
@@ -329,13 +329,8 @@ body .container {
 
 .about-content {
 	position: absolute;
-	background: url(images/smile.png) no-repeat center center;
+	background: url(images/smile.png) no-repeat center;
 	height: 120%;
-	width: 100%;
-	-webkit-background-size: cover; /* For WebKit*/
-	-moz-background-size: cover;    /* Mozilla*/
-	-o-background-size: cover;      /* Opera*/
-	background-size: cover;         /* Generic*/
 }
 
 
