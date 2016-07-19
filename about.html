@@ -61,13 +61,15 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="loading-screen">
+			<div class="spinner"></div>
+		</div>
 	</body>
 </html>
 
 <script>
 	$(document).ready(function() {
-
-		$("body").hide(0).fadeIn(800);
 
 		// Set carousel interval times
 	  $('.carousel').carousel({
@@ -120,5 +122,10 @@
 		function newpage() {
 			window.location = newLocation;
 		}
+	});
+
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".loading-screen").fadeOut(800);
 	});
 </script>
