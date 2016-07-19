@@ -23,7 +23,6 @@ html, body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
-	overflow: hidden;
 }
 
 body .container {
@@ -31,8 +30,9 @@ body .container {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: 'Josefin Sans', sans-serif;
 	z-index: -1;
+	font-family: 'Josefin Sans', sans-serif;
+	overflow: hidden;
 }
 
 .loading-screen {
@@ -86,9 +86,9 @@ body .container {
 	height: 100%;
 	width: 100%;
 	-webkit-background-size: cover; /* For WebKit*/
-  	-moz-background-size: cover;    /* Mozilla*/
-  	-o-background-size: cover;      /* Opera*/
-  	background-size: cover;         /* Generic*/
+	-moz-background-size: cover;    /* Mozilla*/
+	-o-background-size: cover;      /* Opera*/
+	background-size: cover;         /* Generic*/
 }
 
 .content {
@@ -327,13 +327,104 @@ body .container {
 	opacity: 1;
 }
 
-.about-content {
-	position: absolute;
-	background: url(images/smile.png) no-repeat center;
-	height: 120%;
+.flexible-container {
+	min-height: 100%;
+	width: 100%;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
+.big-border {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	height: 1400px;
+	margin-bottom: 20px;
+	border: 24px solid #E0E0E0;
+}
 
+.grey-logo {
+	background: black;
+	top: 0;
+	left: 0;
+	padding: 12px 12px 3px 12px;
+}
+
+.about-image {
+	position: absolute;
+	background: url(images/twerk.png) no-repeat center center;
+	height: 100%;
+	width: 100%;
+	-webkit-background-size: cover; /* For WebKit*/
+	-moz-background-size: cover;    /* Mozilla*/
+	-o-background-size: cover;      /* Opera*/
+	background-size: cover;         /* Generic*/
+}
+
+.about-image-mask {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.3);
+	height: 100%;
+	width: 100%;
+}
+
+.about-image-caption {
+	position: absolute;
+	font-family: 'Galada', cursive;
+	color: #E0E0E0;
+	font-size: 5em;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 16%;
+	width: 100%;
+}
+
+.about-content {
+	position: absolute;
+	top: 75%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	height: 400px;
+}
+
+.about-content-info {
+	height: 400px;
+	width: 400px;
+	float: left;
+	background: #BF380B;
+	padding: 30px;
+}
+
+.about-content-info-inner {
+	border: 2px dotted #0bbfbf;
+	height: 100%;
+	width: 100%;
+	padding: 30px;
+	color: #E0E0E0;
+}
+
+.about-content-image {
+	height: 800px;
+	width: 400px;
+	float: left;
+	background: url(images/bigdoor.png) no-repeat center center;
+	-webkit-background-size: cover; /* For WebKit*/
+	-moz-background-size: cover;    /* Mozilla*/
+	-o-background-size: cover;      /* Opera*/
+	background-size: cover;         /* Generic*/
+}
+
+.quote {
+	font-size: 2em;
+	font-style: italic;
+	position: absolute;
+	top: calc(100% + 300px);
+	left: 100px;
+	width: 550px;
+}
 
 /* Menu icon */
 
