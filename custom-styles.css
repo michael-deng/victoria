@@ -145,7 +145,7 @@ body .container {
 .links {
 	opacity: 0;
 	list-style-type: none;
-	padding: 5em 5em 0 5em;
+	padding: 2em 1em 0 5em;
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
@@ -160,6 +160,9 @@ body .container {
 }
 
 @media (min-width: 768px) {
+	.links {
+		padding-top: 5em;
+	}
 	.links li {
   	display: inline-block;
 	}
@@ -170,8 +173,8 @@ body .container {
 	cursor: default;
 }
 
-.underline {
-	text-decoration: underline;
+.highlight {
+	color: #BF380B !important;
 }
 
 .visible-links {
@@ -276,7 +279,7 @@ body .container {
 }
 
 .top1 {
-  	background: url(images/castleroof.png) no-repeat center center;
+	background: url(images/castleroof.png) no-repeat center center;
 }
 
 .top2 {
@@ -338,22 +341,74 @@ body .container {
 	top: 20px;
 	left: 20px;
 	right: 20px;
-	height: 1600px;
+	height: 250%;
 	margin-bottom: 20px;
 	border: 24px solid #E0E0E0;
 }
 
 @media (min-width: 768px) {
 	.big-border {
-		height: 1400px;
+		height: 180%;
 	}
 }
 
-.grey-logo {
-	background: black;
+.transparent-logo {
+	background: rgba(0,0,0,0.8);
 	top: 0;
 	left: 0;
-	padding: 12px 12px 3px 12px;
+	color: white;
+	font-size: 2.3em;
+	padding: 12px 0 3px 12px;
+	width: 70px;
+	position: absolute;
+	z-index: 1;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	cursor: default;
+}
+
+.transparent-logo-full-width {
+	width: 100%;
+}
+
+.transparent-menu {
+	position: absolute;
+	z-index: 1;
+	width: 80%;
+	padding-right: 1em;
+	height: 60px;
+	top: 0;
+	right: 0;
+}
+
+.horizontal-links {
+	list-style-type: none;
+	font-size: 1.4em;
+	text-align: right;
+}
+
+.horizontal-links li {
+	padding: 1em 0.5em 0 0;
+	color: white;
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.horizontal-links-visible {
+	opacity: 1 !important;
+}
+
+.horizontal-links li a {
+	color: white;
+	cursor: default;
 }
 
 .about-image {
@@ -387,33 +442,42 @@ body .container {
 
 .about-content {
 	position: absolute;
-	top: 75%;
+	top: 70%;
 	left: 0;
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
 	width: 75%;
+	height: 100%;
 }
 
 .about-content-info {
 	width: 100%;
 	float: left;
 	background: #BF380B;
-	padding: 30px;
+	padding: 25px;
+	height: 50%;
 }
 
 .about-content-info-inner {
 	border: 2px dotted #0bbfbf;
 	height: 100%;
 	width: 100%;
-	padding: 30px;
+	padding: 25px;
 	color: #E0E0E0;
-	font-size: 1.4em;
+	font-size: 1.5em;
+	display: table;
+	overflow: hidden;
+}
+
+.about-content-info-inner-text {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .about-content-image {
 	width: 100%;
-	height: 50em;
+	height: 100%;
 	float: left;
 	background: url(images/bigdoor.png) no-repeat center center;
 	-webkit-background-size: cover; /* For WebKit*/
@@ -426,7 +490,7 @@ body .container {
 	font-size: 2em;
 	font-style: italic;
 	position: absolute;
-	top: 200%;
+	top: 225%;
 	width: 75%;
 	left: 0;
 	right: 0;
@@ -438,22 +502,232 @@ body .container {
 }
 
 @media (min-width: 768px) {
+	.about-content {
+		width: 85%;
+	}
+	.about-content-info {
+		height: 60%;
+	}
 	.about-content-info, .about-content-image {
   	width: 50%;
 	}
 	.quote {
 		left: 100px;
-  	top: 152%;
-  	width: 35%;
+  	top: 135%;
+  	width: 34%;
   	margin: 0;
+	}
+}
+
+@media (min-width: 900px) {
+	.about-content {
+		width: 80%;
 	}
 }
 
 @media (min-width: 992px) {
 	.about-content {
+		width: 75%;
+	}
+}
+
+@media (min-width: 1100px) {
+	.about-content {
 		width: 70%;
 	}
 }
+
+@media (min-width: 1200px) {
+	.about-content {
+		width: 65%;
+	}
+}
+
+.experience-content {
+	text-align: center;
+}
+
+.diamond {
+	position: absolute;
+	width: 140px;
+	height: 140px;
+	background: #1eff00;
+	/* Rotate */
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	/* Rotate Origin */
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+	top: 100px;
+	left: 100px;
+	right: -41px;
+	margin: 0 auto;
+	overflow: hidden;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.diamond::before {
+	content: "";
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: white;
+	margin-left: -100px;
+	margin-top: -100px;
+	background: inherit;
+	/* Rotate */
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.diamond::after {
+	content: "";
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -100px;
+	/* Rotate */
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	text-align: center;
+	color: white;
+	padding: 0 30px 0 30px;
+}
+
+.diamond:hover::after {
+	background: rgba(0,0,0,0.7);
+}
+
+#creditsuisse {
+	background: url(images/creditsuisse.png) no-repeat center center;
+	-webkit-background-size: cover; /* For WebKit*/
+	-moz-background-size: cover;    /* Mozilla*/
+	-o-background-size: cover;      /* Opera*/
+	background-size: cover;         /* Generic*/
+}
+
+#creditsuisse:hover::after {
+	content: "Technology Investment Banking Summer Analyst";
+	padding-top: 65px;
+}
+
+#legalpad {
+	margin-top: 103px;
+	left: -103px;
+	background: url(images/legalpad.png) no-repeat center center;
+	-webkit-background-size: cover; /* For WebKit*/
+	-moz-background-size: cover;    /* Mozilla*/
+	-o-background-size: cover;      /* Opera*/
+	background-size: cover;         /* Generic*/
+}
+
+#legalpad:hover::after {
+	content: "Strategy Consultant";
+	padding-top: 90px;
+}
+
+#worldbank {
+	margin-top: 103px;
+	right: -247px;
+	background: url(images/worldbank.png) no-repeat center center;
+	-webkit-background-size: cover; /* For WebKit*/
+	-moz-background-size: cover;    /* Mozilla*/
+	-o-background-size: cover;      /* Opera*/
+	background-size: cover;         /* Generic*/
+}
+
+#worldbank:hover::after {
+	content: "Winter Extern";
+	padding-top: 90px;
+}
+
+#personal {
+	margin-top: 206px;
+	background: url(images/personal.png) no-repeat center center;
+	-webkit-background-size: cover; /* For WebKit*/
+	-moz-background-size: cover;    /* Mozilla*/
+	-o-background-size: cover;      /* Opera*/
+	background-size: cover;         /* Generic*/
+}
+
+#personal:hover::after {
+	content: "Interested in finance and technology";
+	padding-top: 80px;
+}
+
+#medium {
+	margin-top: 309px;
+	left: -103px;
+	background: url(images/medium.png) no-repeat center center;
+	-webkit-background-size: cover; /* For WebKit*/
+	-moz-background-size: cover;    /* Mozilla*/
+	-o-background-size: cover;      /* Opera*/
+	background-size: cover;         /* Generic*/
+}
+
+#medium:hover::after {
+	content: "Strategy Consultant";
+	padding-top: 90px;
+}
+
+#architect {
+	margin-top: 309px;
+	right: -247px;
+	background: url(images/architect.png) no-repeat center center;
+	-webkit-background-size: cover; /* For WebKit*/
+	-moz-background-size: cover;    /* Mozilla*/
+	-o-background-size: cover;      /* Opera*/
+	background-size: cover;         /* Generic*/
+}
+
+#architect:hover::after {
+	content: "Investment Banking Analyst";
+	padding-top: 80px;
+}
+
+#flex {
+	margin-top: 412px;
+	background: url(images/flex.png) no-repeat center center;
+	-webkit-background-size: cover; /* For WebKit*/
+	-moz-background-size: cover;    /* Mozilla*/
+	-o-background-size: cover;      /* Opera*/
+	background-size: cover;         /* Generic*/
+}
+
+#flex:hover::after {
+	content: "Business Analyst Intern";
+	padding-top: 80px;
+}
+
+#watercolor-background {
+	background: url(images/watercolor.png) no-repeat center center;
+	-webkit-background-size: cover; /* For WebKit*/
+	-moz-background-size: cover;    /* Mozilla*/
+	-o-background-size: cover;      /* Opera*/
+	background-size: cover;         /* Generic*/
+}
+
 
 /* Menu icon */
 
@@ -462,18 +736,18 @@ body .container {
 }
 
 #nav-icon1 {
-  	width: 32px;
-  	height: 32px;
-  	position: relative;
-  	margin: 10px auto;
-  	-webkit-transform: rotate(0deg);
-  	-moz-transform: rotate(0deg);
-  	-o-transform: rotate(0deg);
-  	transform: rotate(0deg);
-  	-webkit-transition: .5s ease-in-out;
-  	-moz-transition: .5s ease-in-out;
-  	-o-transition: .5s ease-in-out;
-  	transition: .5s ease-in-out;
+	width: 32px;
+	height: 32px;
+	position: relative;
+	margin: 10px auto;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
 }
 
 #nav-icon1:hover span {
@@ -481,22 +755,22 @@ body .container {
 }
 
 #nav-icon1 span {
-  	display: block;
-  	position: absolute;
-  	height: 5px;
-  	width: 100%;
-  	background: #707070;
-  	border-radius: 9px;
-  	opacity: 1;
-  	left: 0;
-  	-webkit-transform: rotate(0deg);
-  	-moz-transform: rotate(0deg);
-  	-o-transform: rotate(0deg);
-  	transform: rotate(0deg);
-  	-webkit-transition: .5s ease-in-out;
-  	-moz-transition: .5s ease-in-out;
-  	-o-transition: .5s ease-in-out;
-  	transition: .5s ease-in-out;
+	display: block;
+	position: absolute;
+	height: 5px;
+	width: 100%;
+	background: #707070;
+	border-radius: 9px;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
 }
 
 #nav-icon1 span:nth-child(1) {
@@ -512,24 +786,24 @@ body .container {
 }
 
 #nav-icon1.open span:nth-child(1) {
-  	top: 18px;
-  	-webkit-transform: rotate(135deg);
-  	-moz-transform: rotate(135deg);
-  	-o-transform: rotate(135deg);
-  	transform: rotate(135deg);
+	top: 18px;
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
 }
 
 #nav-icon1.open span:nth-child(2) {
-  	opacity: 0;
-  	left: -60px;
+	opacity: 0;
+	left: -60px;
 }
 
 #nav-icon1.open span:nth-child(3) {
-  	top: 18px;
-  	-webkit-transform: rotate(-135deg);
-  	-moz-transform: rotate(-135deg);
-  	-o-transform: rotate(-135deg);
-  	transform: rotate(-135deg);
+	top: 18px;
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	transform: rotate(-135deg);
 }
 
 
