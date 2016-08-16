@@ -613,6 +613,7 @@ body .container {
 	text-align: center;
 	color: white;
 	padding: 0 30px 0 30px;
+	white-space: pre;
 }
 
 .diamond:hover::after {
@@ -628,8 +629,8 @@ body .container {
 }
 
 #creditsuisse:hover::after {
-	content: "Technology Investment Banking Summer Analyst";
-	padding-top: 65px;
+	content: "2016 \A Technology Investment \A Banking Summer \A Analyst";
+	padding-top: 60px;
 }
 
 #legalpad {
@@ -643,8 +644,8 @@ body .container {
 }
 
 #legalpad:hover::after {
-	content: "Strategy Consultant";
-	padding-top: 90px;
+	content: "2015 \A Strategy Consultant";
+	padding-top: 70px;
 }
 
 #worldbank {
@@ -658,8 +659,8 @@ body .container {
 }
 
 #worldbank:hover::after {
-	content: "Winter Extern";
-	padding-top: 90px;
+	content: "2015 \A Winter Extern";
+	padding-top: 70px;
 }
 
 #personal {
@@ -672,7 +673,7 @@ body .container {
 }
 
 #personal:hover::after {
-	content: "Interested in finance and technology";
+	content: "Interested in finance \A and technology";
 	padding-top: 80px;
 }
 
@@ -687,8 +688,8 @@ body .container {
 }
 
 #medium:hover::after {
-	content: "Strategy Consultant";
-	padding-top: 90px;
+	content: "2014 \A Strategy Consultant";
+	padding-top: 70px;
 }
 
 #architect {
@@ -702,8 +703,8 @@ body .container {
 }
 
 #architect:hover::after {
-	content: "Investment Banking Analyst";
-	padding-top: 80px;
+	content: "2014 \A Investment Banking \A Fall Analyst";
+	padding-top: 65px;
 }
 
 #flex {
@@ -716,8 +717,8 @@ body .container {
 }
 
 #flex:hover::after {
-	content: "Business Analyst Intern";
-	padding-top: 80px;
+	content: "2014 \A Business Analyst Intern";
+	padding-top: 70px;
 }
 
 #watercolor-background {
