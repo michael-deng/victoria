@@ -440,7 +440,7 @@ body .container {
 	position: absolute;
 	font-family: 'Galada', cursive;
 	color: #E0E0E0;
-	font-size: 5em;
+	font-size: 5.5em;
 	font-weight: 600;
 	text-align: center;
 	padding: 3em 1em 0 1em;
@@ -556,8 +556,8 @@ body .container {
 
 .diamond {
 	position: absolute;
-	width: 140px;
-	height: 140px;
+	width: 136px;
+	height: 136px;
 	background: #1eff00;
 	/* Rotate */
 	-webkit-transform: rotate(-45deg);
@@ -571,9 +571,9 @@ body .container {
 	-ms-transform-origin: 0 100%;
 	-o-transform-origin: 0 100%;
 	transform-origin: 0 100%;
-	top: 100px;
-	left: 100px;
-	right: -41px;
+	top: 15vh;
+	left: 98px;
+	right: -38px;
 	margin: 0 auto;
 	overflow: hidden;
 	-webkit-transition: all 500ms ease;
@@ -641,8 +641,8 @@ body .container {
 }
 
 #legalpad {
-	margin-top: 103px;
-	left: -103px;
+	margin-top: 100px;
+	left: -100px;
 	background: url(images/legalpad.png) no-repeat center center;
 	-webkit-background-size: cover; /* For WebKit*/
 	-moz-background-size: cover;    /* Mozilla*/
@@ -656,8 +656,8 @@ body .container {
 }
 
 #worldbank {
-	margin-top: 103px;
-	right: -247px;
+	margin-top: 100px;
+	right: -243px;
 	background: url(images/worldbank.png) no-repeat center center;
 	-webkit-background-size: cover; /* For WebKit*/
 	-moz-background-size: cover;    /* Mozilla*/
@@ -671,7 +671,7 @@ body .container {
 }
 
 #personal {
-	margin-top: 206px;
+	margin-top: 201px;
 	background: url(images/personal.png) no-repeat center center;
 	-webkit-background-size: cover; /* For WebKit*/
 	-moz-background-size: cover;    /* Mozilla*/
@@ -685,8 +685,8 @@ body .container {
 }
 
 #medium {
-	margin-top: 309px;
-	left: -103px;
+	margin-top: 302px;
+	left: -100px;
 	background: url(images/medium.png) no-repeat center center;
 	-webkit-background-size: cover; /* For WebKit*/
 	-moz-background-size: cover;    /* Mozilla*/
@@ -700,8 +700,8 @@ body .container {
 }
 
 #architect {
-	margin-top: 309px;
-	right: -247px;
+	margin-top: 302px;
+	right: -243px;
 	background: url(images/architect.png) no-repeat center center;
 	-webkit-background-size: cover; /* For WebKit*/
 	-moz-background-size: cover;    /* Mozilla*/
@@ -715,7 +715,7 @@ body .container {
 }
 
 #flex {
-	margin-top: 412px;
+	margin-top: 403px;
 	background: url(images/flex.png) no-repeat center center;
 	-webkit-background-size: cover; /* For WebKit*/
 	-moz-background-size: cover;    /* Mozilla*/
@@ -813,6 +813,8 @@ body .container {
 	-o-transform: rotate(-135deg);
 	transform: rotate(-135deg);
 }
+
+
 
 /* Loader */
 

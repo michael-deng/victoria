@@ -1,3 +1,5 @@
+/* Loader */
+
 'use strict';
 var path = document.querySelector('#wave');
 var animation = document.querySelector('#moveTheWave');
@@ -90,3 +92,4 @@ function buildWave(w, h) {
     path.setAttribute('d', pathData);
 }
 buildWave(90, 60);
+
