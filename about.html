@@ -69,21 +69,24 @@
 		</div>
 
 		<div class="loading-screen">
-			<section class="wrapper">
-			  <div class="spinner">
-			    <i></i>
-			    <i></i>
-			    <i></i>
-			    <i></i>
-			    <i></i>
-			    <i></i>
-			    <i></i>
-			  </div>
-			</section>
+			<div class="loader">
+			  <svg xmlns="http://www.w3.org/2000/svg" 
+			     width="80px" height="60px"
+			     viewBox="5 0 80 60">
+			    <path id="wave" 
+			        fill="none" 
+			        stroke="#262626" 
+			        stroke-width="4"
+			        stroke-linecap="round">
+			    </path>
+			  </svg>
+			</div>
+			<div class="loading-text">Just chill</div>
 		</div>
 	</body>
 </html>
 
+<script src="custom-scripts.js"></script>
 <script>
 	$(document).ready(function() {
 
