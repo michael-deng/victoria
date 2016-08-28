@@ -366,7 +366,7 @@ body .container {
 	color: white;
 	font-size: 2.3em;
 	padding: 12px 0 3px 12px;
-	width: 70px;
+	width: 58px;
 	position: absolute;
 	z-index: 1;
 	-webkit-transition: all 500ms ease;
@@ -377,6 +377,12 @@ body .container {
 	cursor: default;
 }
 
+@media (min-width: 768px) {
+	.transparent-logo {
+		width: 70px;
+	}
+}
+
 .transparent-logo-full-width {
 	width: 100%;
 }
@@ -384,8 +390,7 @@ body .container {
 .transparent-menu {
 	position: absolute;
 	z-index: 1;
-	width: 80%;
-	padding-right: 1em;
+	width: calc(100% - 60px);
 	height: 60px;
 	top: 0;
 	right: 0;
@@ -394,7 +399,8 @@ body .container {
 .horizontal-links {
 	list-style-type: none;
 	font-size: 1.4em;
-	text-align: right;
+	text-align: left;
+	visibility: hidden;
 }
 
 .horizontal-links li {
@@ -410,6 +416,7 @@ body .container {
 }
 
 .horizontal-links-visible {
+	visibility: visible;
 	opacity: 1 !important;
 }
 
