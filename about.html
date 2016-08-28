@@ -119,6 +119,9 @@
 	$(window).load(function() {
 		// Animate loader off screen
 		$(".loading-screen").fadeOut(800);
-		$(".about-image-caption").hide(0).delay(800).fadeIn(800);
+		$(".about-image-caption").delay(400).animate({
+			marginTop:'0px', 
+			opacity:'1'
+		}, 800);
 	});
 </script>

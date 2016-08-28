@@ -452,6 +452,8 @@ body .container {
 	text-align: center;
 	padding: 3em 1em 0 1em;
 	width: 100%;
+	opacity: 0;
+	margin-top: -20px;
 }
 
 .about-content {
