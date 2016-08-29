@@ -390,7 +390,7 @@ body .container {
 .transparent-menu {
 	position: absolute;
 	z-index: 1;
-	width: calc(100% - 60px);
+	width: calc(100% - 85px);
 	height: 60px;
 	top: 0;
 	right: 0;
