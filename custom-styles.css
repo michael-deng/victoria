@@ -619,7 +619,7 @@ body .container {
 	-ms-transform-origin: 0 100%;
 	-o-transform-origin: 0 100%;
 	transform-origin: 0 100%;
-	top: 80px;
+	top: 70px;
 	left: 82px;
 	right: -38px;
 	margin: 0 auto;
@@ -673,6 +673,7 @@ body .container {
 
 @media (min-width: 768px) {
 	.diamond {
+		top: 80px;
 		width: 135px;
 		height: 135px;
 		left: 98px;
