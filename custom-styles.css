@@ -382,6 +382,12 @@ body .container {
 
 @media (min-width: 768px) {
 	.transparent-logo {
+		width: 65px;
+	}
+}
+
+@media (min-width: 992px) {
+  .transparent-logo {
 		width: 70px;
 	}
 }
