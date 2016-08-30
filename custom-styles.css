@@ -431,7 +431,7 @@ body .container {
 .about-image {
 	position: absolute;
 	background: url(images/twerk.png);
-	height: 100%;
+	height: 550px;
 	width: 100%;
 	-webkit-background-size: cover; /* For WebKit*/
 	-moz-background-size: cover;    /* Mozilla*/
@@ -442,7 +442,7 @@ body .container {
 .about-image-mask {
 	position: absolute;
 	background: rgba(0, 0, 0, 0.3);
-	height: 100%;
+	height: 550px;
 	width: 100%;
 }
 
@@ -460,6 +460,12 @@ body .container {
 }
 
 @media (min-width: 768px) {
+	.about-image {
+		height: 750px;
+	}
+	.about-image-mask {
+		height: 750px;
+	}
 	.about-image-caption {
 		font-size: 5.5em;
 	}
