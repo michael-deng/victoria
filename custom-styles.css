@@ -342,6 +342,7 @@ body .container {
 
 .flexible-container {
 	height: 600px;
+	min-height: 100%;
 	width: 100%;
 	font-family: 'Josefin Sans', sans-serif;
 }
@@ -619,7 +620,7 @@ body .container {
 	-ms-transform-origin: 0 100%;
 	-o-transform-origin: 0 100%;
 	transform-origin: 0 100%;
-	top: 12vh;
+	top: 80px;
 	left: 82px;
 	right: -38px;
 	margin: 0 auto;
