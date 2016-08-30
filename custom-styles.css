@@ -597,8 +597,8 @@ body .container {
 
 .diamond {
 	position: absolute;
-	width: 136px;
-	height: 136px;
+	width: 120px;
+	height: 120px;
 	background: #1eff00;
 	/* Rotate */
 	-webkit-transform: rotate(-45deg);
@@ -626,14 +626,14 @@ body .container {
 
 .diamond::before {
 	content: "";
-	width: 200px;
-	height: 200px;
+	width: 180px;
+	height: 180px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	color: white;
-	margin-left: -100px;
-	margin-top: -100px;
+	margin-left: -90px;
+	margin-top: -90px;
 	background: inherit;
 	/* Rotate */
 	-webkit-transform: rotate(45deg);
@@ -645,13 +645,13 @@ body .container {
 
 .diamond::after {
 	content: "";
-	width: 200px;
-	height: 200px;
+	width: 180px;
+	height: 180px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-left: -100px;
-	margin-top: -100px;
+	margin-left: -90px;
+	margin-top: -90px;
 	/* Rotate */
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
@@ -662,6 +662,25 @@ body .container {
 	color: white;
 	padding: 0 30px 0 30px;
 	white-space: pre;
+}
+
+@media (min-width: 768px) {
+	.diamond {
+		width: 135px;
+		height: 135px;
+	}
+	.diamond::before {
+		width: 200px;
+		height: 200px;
+		margin-left: -100px;
+		margin-top: -100px;
+	}
+	.diamond::after {
+		width: 200px;
+		height: 200px;
+		margin-left: -100px;
+		margin-top: -100px;
+	}
 }
 
 .diamond:hover::after {
@@ -682,13 +701,20 @@ body .container {
 }
 
 #legalpad {
-	margin-top: 100px;
-	left: -100px;
+	margin-top: 88px;
+	left: -78px;
 	background: url(images/legalpad.png) no-repeat center center;
 	-webkit-background-size: cover; /* For WebKit*/
 	-moz-background-size: cover;    /* Mozilla*/
 	-o-background-size: cover;      /* Opera*/
 	background-size: cover;         /* Generic*/
+}
+
+@media (min-width: 768px) {
+	#legalpad {
+		margin-top: 100px;
+		left: -100px;
+	}
 }
 
 #legalpad:hover::after {
@@ -697,13 +723,20 @@ body .container {
 }
 
 #worldbank {
-	margin-top: 100px;
-	right: -243px;
+	margin-top: 88px;
+	right: -214px;
 	background: url(images/worldbank.png) no-repeat center center;
 	-webkit-background-size: cover; /* For WebKit*/
 	-moz-background-size: cover;    /* Mozilla*/
 	-o-background-size: cover;      /* Opera*/
 	background-size: cover;         /* Generic*/
+}
+
+@media (min-width: 768px) {
+	#worldbank {
+		margin-top: 100px;
+		right: -237px;
+	}
 }
 
 #worldbank:hover::after {
@@ -712,12 +745,18 @@ body .container {
 }
 
 #personal {
-	margin-top: 201px;
+	margin-top: 177px;
 	background: url(images/personal.png) no-repeat center center;
 	-webkit-background-size: cover; /* For WebKit*/
 	-moz-background-size: cover;    /* Mozilla*/
 	-o-background-size: cover;      /* Opera*/
 	background-size: cover;         /* Generic*/
+}
+
+@media (min-width: 768px) {
+	#personal {
+		margin-top: 201px;
+	}
 }
 
 #personal:hover::after {
@@ -726,13 +765,20 @@ body .container {
 }
 
 #medium {
-	margin-top: 302px;
-	left: -100px;
+	margin-top: 266px;
+	left: -78px;
 	background: url(images/medium.png) no-repeat center center;
 	-webkit-background-size: cover; /* For WebKit*/
 	-moz-background-size: cover;    /* Mozilla*/
 	-o-background-size: cover;      /* Opera*/
 	background-size: cover;         /* Generic*/
+}
+
+@media (min-width: 768px) {
+	#medium {
+		margin-top: 302px;
+		left: -100px;
+	}
 }
 
 #medium:hover::after {
@@ -741,13 +787,20 @@ body .container {
 }
 
 #architect {
-	margin-top: 302px;
-	right: -243px;
+	margin-top: 266px;
+	right: -214px;
 	background: url(images/architect.png) no-repeat center center;
 	-webkit-background-size: cover; /* For WebKit*/
 	-moz-background-size: cover;    /* Mozilla*/
 	-o-background-size: cover;      /* Opera*/
 	background-size: cover;         /* Generic*/
+}
+
+@media (min-width: 768px) {
+	#architect {
+		margin-top: 302px;
+		right: -237px;
+	}
 }
 
 #architect:hover::after {
@@ -756,12 +809,18 @@ body .container {
 }
 
 #flex {
-	margin-top: 403px;
+	margin-top: 355px;
 	background: url(images/flex.png) no-repeat center center;
 	-webkit-background-size: cover; /* For WebKit*/
 	-moz-background-size: cover;    /* Mozilla*/
 	-o-background-size: cover;      /* Opera*/
 	background-size: cover;         /* Generic*/
+}
+
+@media (min-width: 768px) {
+	#flex {
+		margin-top: 403px;
+	}
 }
 
 #flex:hover::after {
