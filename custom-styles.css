@@ -351,7 +351,7 @@ body .container {
 	top: 20px;
 	left: 20px;
 	right: 20px;
-	height: 275%;
+	height: 250%;
 	margin-bottom: 20px;
 	border: 24px solid #E0E0E0;
 }
@@ -459,6 +459,17 @@ body .container {
 	margin-top: -20px;
 }
 
+.about-content {
+	position: absolute;
+	top: 400px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	height: 100%;
+}
+
 @media (min-width: 768px) {
 	.about-image {
 		height: 750px;
@@ -469,17 +480,6 @@ body .container {
 	.about-image-caption {
 		font-size: 5.5em;
 	}
-}
-
-.about-content {
-	position: absolute;
-	top: 70%;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	width: 75%;
-	height: 100%;
 }
 
 .about-content-info {
@@ -521,7 +521,7 @@ body .container {
 	font-size: 2em;
 	font-style: italic;
 	position: absolute;
-	top: 225%;
+	top: 1500px;
 	width: 70%;
 	left: 0;
 	right: 0;
@@ -534,6 +534,7 @@ body .container {
 
 @media (min-width: 768px) {
 	.about-content {
+		top: 500px;
 		width: 85%;
 	}
 	.about-content-info {
