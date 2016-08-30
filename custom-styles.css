@@ -569,6 +569,9 @@ body .container {
 	.about-content {
 		width: 75%;
 	}
+	.quote {
+		left: 150px;
+	}
 }
 
 @media (min-width: 1100px) {
