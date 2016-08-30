@@ -252,7 +252,7 @@ body .container {
 
 .middle-content {
 	max-width: 100%;
-	padding: 10px 20px 10px 20px;
+	padding: 8px 20px 8px 20px;
 }
 
 @media (min-width: 768px) {
@@ -613,7 +613,7 @@ body .container {
 	-o-transform-origin: 0 100%;
 	transform-origin: 0 100%;
 	top: 12vh;
-	left: 98px;
+	left: 82px;
 	right: -38px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -668,6 +668,8 @@ body .container {
 	.diamond {
 		width: 135px;
 		height: 135px;
+		left: 98px;
+		right: -38px;
 	}
 	.diamond::before {
 		width: 200px;
@@ -702,7 +704,7 @@ body .container {
 
 #legalpad {
 	margin-top: 88px;
-	left: -78px;
+	left: -94px;
 	background: url(images/legalpad.png) no-repeat center center;
 	-webkit-background-size: cover; /* For WebKit*/
 	-moz-background-size: cover;    /* Mozilla*/
@@ -766,7 +768,7 @@ body .container {
 
 #medium {
 	margin-top: 266px;
-	left: -78px;
+	left: -94px;
 	background: url(images/medium.png) no-repeat center center;
 	-webkit-background-size: cover; /* For WebKit*/
 	-moz-background-size: cover;    /* Mozilla*/
