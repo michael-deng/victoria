@@ -348,17 +348,22 @@ body .container {
 
 .big-border {
 	position: absolute;
-	top: 20px;
-	left: 20px;
-	right: 20px;
+	top: 15px;
+	left: 15px;
+	right: 15px;
 	height: 220%;
-	margin-bottom: 20px;
-	border: 24px solid #E0E0E0;
+	margin-bottom: 15px;
+	border: 20px solid #E0E0E0;
 }
 
 @media (min-width: 768px) {
 	.big-border {
+		top: 20px;
+		left: 20px;
+		right: 20px;
 		height: 180%;
+		margin-bottom: 20px;
+		border-width: 24px;
 	}
 }
 
