@@ -375,7 +375,7 @@ body .container {
 		top: 20px;
 		left: 20px;
 		right: 20px;
-		height: 180%;
+		height: 1250px;
 		margin-bottom: 20px;
 		border-width: 24px;
 	}
@@ -572,7 +572,7 @@ body .container {
 	.quote {
 		display: block;
 		left: 100px;
-  	top: 980px;
+  	top: 970px;
   	width: 34%;
   	margin: 0;
 	}
