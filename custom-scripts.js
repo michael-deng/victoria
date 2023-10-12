@@ -92,5 +92,3 @@ function buildWave(w, h) {
     path.setAttribute('d', pathData);
 }
 buildWave(90, 60);
-
-
